@@ -1,0 +1,52 @@
+
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+text-align: center;
+ color: yellow;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    height:500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+}
+
+.left-arrow,.right-arrow{
+    position: relative;
+    right: -10px;
+    width: 100px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 100px;
+    background-color:skyblue;
+    color: white;
+    cursor: pointer;
+}
+.right-arrow{
+    left: -10px;
+}
+.animate{
+animation: slide 2s;
+}
+
+@keyframes slide {
+    from{transform: rotateY(180deg);}
+    to{transform: rotateY(0deg);}
+}
+button[disabled]{
+    background-color:lightgray;
+    cursor: not-allowed;
+}
